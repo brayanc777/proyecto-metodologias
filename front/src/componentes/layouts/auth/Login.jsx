@@ -43,7 +43,8 @@ const Login = () => {
     }
   }
   return (
-    <form>
+    <form className="login">
+      <fieldset >
       <input
         onChange={(e) => setUser(e.target.value)}
         placeholder="Usuario"
@@ -73,6 +74,7 @@ const Login = () => {
         id=""
       />
       <Link to="/registro">Crear cuenta</Link>
+      </fieldset>
     </form>
   );
 };
