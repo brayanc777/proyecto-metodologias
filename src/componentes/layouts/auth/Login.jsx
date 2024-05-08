@@ -33,7 +33,7 @@ const Login = () => {
         text: "Será redireccionado al Home!",
         icon: "success"
       });
-      redireccion('/home')
+      redireccion('/')
     } else {
       Swal.fire({
         title: "Error",

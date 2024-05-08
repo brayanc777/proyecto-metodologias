@@ -42,13 +42,16 @@ const Header = () => {
       </h1>
       <section>
         <Link to="/buscar"><img src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1" /></Link>
-        <Link to="/"><img src="https://img.icons8.com/fluency-systems-filled/48/user.png" alt="user" /></Link>
+        <Link to="/login"><img src="https://img.icons8.com/fluency-systems-filled/48/user.png" alt="user" /></Link>
         <Link to="/carrito"><img src="https://img.icons8.com/ios-filled/50/shopping-bag.png" alt="shopping-bag" /></Link>
       </section>
     </header>
     <section className="banner">
     <img src="https://webnovant.com/media/news/1a35a6157554541821388ff45639cb64.jpg" alt="" />
     </section>
+    <footer>
+      
+    </footer>
   </body>
 
   );
