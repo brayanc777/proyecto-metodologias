@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { initDatabase } from "../../config/firebaseConfig";
-import { collection, getDocs, deleteDoc, addDoc } from "firebase/firestore";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+
 
 const Registro = () => {
     const [email, setEmail] = useState("");
@@ -50,8 +51,10 @@ const Registro = () => {
         }
     }
     return (
-        <form>
-            <input
+        <form className="registro">
+    <fieldset>
+        <h2>Registrate!</h2>
+    <input
                 onChange={(e) => setUser(e.target.value)}
                 placeholder="Usuario"
                 type="text"
@@ -72,14 +75,14 @@ const Registro = () => {
                 name=""
                 id=""
             />
-            <input onChange={(e) => { console.log(e.target.files[0]) }} type="file" />
             <input
                 onClick={registrarUsuario}
                 type="button"
-                value="Registrar Usuario"
+                value="Registrarse"
                 name=""
                 id=""
             />
+    </fieldset>
         </form>
     );
 };
